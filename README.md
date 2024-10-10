@@ -2,9 +2,13 @@
 Mobile-API for [BarvikhaRP](https://bh-rp.com) an popular multiplayer mobile game about russia which is based on GTA San Andreas
 
 ## Example
-```python
-import barvikha_rp
-barvikha_rp = barvikha_rp.BarvikhaRP()
-news = barvikha_rp.get_news()
-print(news)
+```JavaScript
+async function main() {
+	const { BarvikhaRp } = require("./barvikha_rp.js")
+	const barvikhaRp = new BarvikhaRp()
+	const servers = await barvikhaRp.getServers()
+  	console.log(servers)
+}
+
+main()
 ```
